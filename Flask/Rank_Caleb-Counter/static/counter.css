@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+p {
+    text-align: center;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+button {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+}

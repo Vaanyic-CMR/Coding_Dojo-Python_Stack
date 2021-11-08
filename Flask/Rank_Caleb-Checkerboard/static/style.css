@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 50px 30%;
+    padding: 10px;
+    color: red;
+    background-color: black;
+    text-align: center;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.tile {
+    height: 100px;
+    width: 100px;
+}
+.color-0 {
+    background-color: black;
+}
+.color-1 {
+    background-color: red;
+}

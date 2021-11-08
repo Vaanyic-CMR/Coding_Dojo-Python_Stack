@@ -1,0 +1,15 @@
+body {
+    padding: 100px 15%;
+}
+label, p, h1, h2 {
+    color: whitesmoke;
+
+}
+#splitter {
+    transform: rotate(90deg);
+    border:2px;
+}
+.box {
+    padding: 30px;
+    background-color: #494949;
+}

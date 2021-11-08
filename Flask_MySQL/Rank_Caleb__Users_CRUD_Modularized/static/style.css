@@ -1,0 +1,17 @@
+body {
+    padding: 20px 30%;
+}
+button {
+    box-shadow: 3px 3px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    border-style: solid;
+    padding: 10px;
+}
+.block {
+    display: block;
+}

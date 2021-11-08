@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box-skyblue {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border-style: solid;
+            border-width: 5px;
+        }
+        .box-blue {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border-style: solid;
+            border-width: 5px;
+        }
+        .box-red {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-style: solid;
+            border-width: 5px;
+        }
+        .box-yellow {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-style: solid;
+            border-width: 5px;
+        }
+    </style>
+    <title>Caleb Rank | Playground</title>
+</head>
+<body>
+
+    <h1>Welcome!</h1>
+    <div class=container>
+        {% for i in range(0, x) %}
+            <div class="box-{{ b_color }}"></div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

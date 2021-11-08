@@ -1,0 +1,25 @@
+h3 {
+    text-decoration: underline;
+}
+.container {
+    padding: 25px 20%;
+}
+.nav {
+    padding-left: 30px;
+}
+#valid_error {
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    color: whitesmoke;
+    border-style: solid;
+    border-color: black;
+}
+#valid_success {
+    padding: 10px;
+    text-align: center;
+    background-color: limegreen;
+    color: black;
+    border-style: solid;
+    border-color: black;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Caleb Rank | Dojo Weather</title>
+</head>
+<body>
+    
+    <div id="nav_bar" class="flex space_between align_center content_padding">
+        <h1 class="monospace_font">DojoWeather</h1>
+        <ul id="city_select" class="flex">
+            <li onclick="loadCity('burbank')">Burbank</li>
+            <li onclick="loadCity('chicago')">Chicago</li>
+            <li onclick="loadCity('dallas')">Dallas</li>
+        </ul>
+    </div>
+
+    <div id="selected_city" class="flex content_margin space_between align_center">
+        <h2>San Jose</h2>
+        <div id="temp_type" class="flex space_between">
+            <p>show temperature in: </p>
+            <select onchange="changeMeasureType(this)">
+                <option><span>&#176;</span>C</option>
+                <option><span>&#176;</span>F</option>
+            </select>
+        </div>
+    </div>
+    <hr class="content_margin">
+    <div class="content_margin flex space_between">
+        <div class="weather_card">
+            <h3 class="monospace_font">Today</h3>
+            <img src="assets/some_rain.png" alt="some-rain-icon" class="weather_icon">
+            <p>some rain</p>
+            <div class="flex space_between">
+                <p class="high_temps" id="temp_0">24<span>&#176;</span></p>
+                <p class="low_temps" id="temp_1">18<span>&#176;</span></p>
+            </div>
+        </div>
+        <div class="weather_card">
+            <h3 class="monospace_font">Tomorrow</h3>
+            <img src="assets/some_sun.png" alt="some-sun-icon" class="weather_icon">
+            <p>some sun</p>
+            <div class="flex space_between">
+                <p class="high_temps" id="temp_2">27<span>&#176;</span></p>
+                <p class="low_temps" id="temp_3">19<span>&#176;</span></p>
+            </div>
+        </div>
+        <div class="weather_card">
+            <h3 class="monospace_font">Friday</h3>
+            <img src="assets/some_clouds.png" alt="some-clouds-icon" class="weather_icon">
+            <p>some clouds</p>
+            <div class="flex space_between">
+                <p class="high_temps" id="temp_4">21<span>&#176;</span></p>
+                <p class="low_temps" id="temp_5">16<span>&#176;</span></p>
+            </div>
+        </div>
+        <div class="weather_card">
+            <h3 class="monospace_font">Saturday</h3>
+            <img src="assets/some_sun.png" alt="some-sun-icon" class="weather_icon">
+            <p>some sun</p>
+            <div class="flex space_between">
+                <p class="high_temps" id="temp_6">26<span>&#176;</span></p>
+                <p class="low_temps" id="temp_7">21<span>&#176;</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookie_prompt" class="flex content_margin space_between align_center">
+        <img src="assets/cookie.png" alt="cookie-icon">
+        <div>
+            <h4>Stop! Cookie Time.</h4>
+            <p>
+                We use cookies (sadly not the edible ones) to personalize content 
+                and ads, to provide social media features and to analyse our traffic.
+                <a href="#" class="hyperlink">Read more...</a>
+            </p>
+        </div>
+        <button id="cookie_accept" onclick="acceptCookies()">I Accept</button>
+    </div>
+
+</body>
+</html>

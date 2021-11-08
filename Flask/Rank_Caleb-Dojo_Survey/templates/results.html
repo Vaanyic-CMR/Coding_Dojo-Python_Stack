@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='results.css') }}">
+    <title>Caleb Rank | Dojo Survey | Results</title>
+</head>
+<body>
+
+    <div id="form">
+        <h1>Submitted Info</h1>
+        <div class="flex">
+            <p class="flex-1">Name:</p>
+            <p class="flex-1">{{ name }}</p>
+        </div>
+        <div class="flex">
+            <p class="flex-1">Dojo Location:</p>
+            <p class="flex-1">{{ location }}</p>
+        </div>
+        <div class="flex">
+            <p class="flex-1">Favorite Language:</p>
+            <p class="flex-1">{{ language }}</p>
+        </div>
+        <div class="flex">
+            <p class="flex-1">Comment:</p>
+            <p class="flex-1">{{ comment }}</p>
+        </div>
+        <form action="/clear_data">
+            <button>Save & Exit</button>
+        </form>
+    </div>
+
+</body>
+</html>

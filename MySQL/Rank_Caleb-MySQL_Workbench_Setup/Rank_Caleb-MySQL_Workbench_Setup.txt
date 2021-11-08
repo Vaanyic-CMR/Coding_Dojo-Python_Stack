@@ -1,0 +1,17 @@
+USE twitter;
+
+SELECT * FROM users;
+
+INSERT INTO users (first_name, last_name, handle, birthday, created_at, updated_at)
+VALUES('Caleb', 'Rank', 'cmRank', '1998-08-11', '2021-10-22 11:08:00', '2021-10-22 11:08:00');
+
+SELECT * FROM users;
+
+UPDATE users SET handle = 'Tenkara37' WHERE id = 6;
+
+SELECT * FROM users;
+
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM users WHERE id = 5;
+
+SELECT * FROM users;

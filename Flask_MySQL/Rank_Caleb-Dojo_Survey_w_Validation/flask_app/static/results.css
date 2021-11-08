@@ -1,0 +1,34 @@
+body {
+    padding: 20px 30%;
+}
+h1 {
+    color: goldenrod;
+}
+p {
+    color: whitesmoke;
+    font-size: 13pt;
+}
+button {
+    background-color: lightblue;
+    border-style: solid;
+    box-shadow: 3px 3px;
+    padding: 5px 15px;
+    margin-top: 5px;
+}
+form {
+    display: flex;
+    justify-content: right;
+}
+#form {
+    background-color: #7c7c7c;
+    padding: 25px;
+}
+.block {
+    display: block;
+}
+.flex {
+    display: flex;
+}
+.flex-1 {
+    flex: 1;
+}

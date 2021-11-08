@@ -1,0 +1,56 @@
+SELECT * FROM dojos;
+SELECT * FROM ninjas;
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES('Eastern Dojo', '2021-10-22 1:36:00', '2021-10-22 1:36:00');
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES('Western Dojo', '2021-10-22 1:36:00', '2021-10-22 1:36:00');
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES('Northern Dojo', '2021-10-22 1:36:00', '2021-10-22 1:36:00');
+
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM dojos;
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES('Eastern Dojo', '2021-10-22 1:36:00', '2021-10-22 1:41:00');
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES('Western Dojo', '2021-10-22 1:36:00', '2021-10-22 1:41:00');
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES('Northern Dojo', '2021-10-22 1:36:00', '2021-10-22 1:41:00');
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES('John', 'Doe', 25, '2021-10-22 1:52:00', '2021-10-22 1:52:00', 4);
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES('Jane', 'Doe', 26, '2021-10-22 1:52:00', '2021-10-22 1:52:00', 4);
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES('Caleb', 'Rank', 23, '2021-10-22 1:52:00', '2021-10-22 1:52:00', 4);
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES('Jack', 'Sparrow', 25, '2021-10-22 1:52:00', '2021-10-22 1:52:00', 5);
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES('Luke', 'Skywalker', 26, '2021-10-22 1:52:00', '2021-10-22 1:52:00', 5);
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES('Frodo', 'Baggins', 23, '2021-10-22 1:52:00', '2021-10-22 1:52:00', 5);
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES('Coding', 'Dojo', 25, '2021-10-22 2:04:00', '2021-10-22 2:04:00', 6);
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES('State', 'Farm', 26, '2021-10-22 2:04:00', '2021-10-22 2:04:00', 6);
+
+INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUES('Fort', 'Lewis', 23, '2021-10-22 2:04:00', '2021-10-22 2:04:00', 6);
+
+SELECT * FROM ninjas WHERE dojo_id = 4;
+
+SELECT * FROM ninjas WHERE dojo_id = 6;
+
+SELECT dojo_id FROM ninjas WHERE id = 9;

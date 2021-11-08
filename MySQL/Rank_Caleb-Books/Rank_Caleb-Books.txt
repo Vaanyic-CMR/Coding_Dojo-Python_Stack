@@ -1,0 +1,93 @@
+INSERT INTO authors (name, created_at, updated_at)
+VALUES('Jane Austen', '2021-10-22 2:16:00', '2021-10-22 2:16:00');
+
+INSERT INTO authors (name, created_at, updated_at)
+VALUES('Emily Dickinson', '2021-10-22 2:16:00', '2021-10-22 2:16:00');
+
+INSERT INTO authors (name, created_at, updated_at)
+VALUES('Fyodor Dostoevsky', '2021-10-22 2:16:00', '2021-10-22 2:16:00');
+
+INSERT INTO authors (name, created_at, updated_at)
+VALUES('William Shakespeare', '2021-10-22 2:16:00', '2021-10-22 2:16:00');
+
+INSERT INTO authors (name, created_at, updated_at)
+VALUES('Lau Tzu', '2021-10-22 2:16:00', '2021-10-22 2:16:00');
+
+INSERT INTO books (title)
+VALUES('C Sharp');
+
+INSERT INTO books (title)
+VALUES('Java');
+
+INSERT INTO books (title)
+VALUES('Python');
+
+INSERT INTO books (title)
+VALUES('PHP');
+
+INSERT INTO books (title)
+VALUES('Ruby');
+
+UPDATE books SET title = 'C#' WHERE title = 'C Sharp';
+
+UPDATE authors SET name = 'Bill Shakespeare' WHERE name = 'William Shakespeare';
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(1, 1);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(1, 2);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(2, 1);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(2, 2);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(2, 3);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(3, 1);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(3, 2);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(3, 3);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(3, 4);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(4, 1);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(4, 2);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(4, 3);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(4, 4);
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(4, 5);
+
+SELECT * FROM authors
+JOIN favorites ON authors.id = favorites.author_id
+JOIN books ON books.id = favorites.book_id
+WHERE book_id = 3;
+
+DELETE FROM favorites WHERE author_id = 2 AND book_id = 3;
+
+INSERT INTO favorites (author_id, book_id)
+VALUES(5, 2);
+
+SELECT * FROM books
+JOIN favorites ON books.id = favorites.book_id
+WHERE book_id = 3;
+
+SELECT * FROM authors
+JOIN favorites ON authors.id = favorites.author_id
+WHERE book_id = 5;

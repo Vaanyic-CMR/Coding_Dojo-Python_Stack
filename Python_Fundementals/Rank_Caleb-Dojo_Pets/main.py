@@ -1,0 +1,45 @@
+from ninja import Ninja
+from pets import Pet, Dog, Cat, Bird
+
+print('---------------------------')
+n = Ninja('John', 'Doe')
+n.displayInfo()
+n.walk().feed().bathe()
+n.displayInfo()
+print('---------------------------')
+
+print('---------------------------')
+p = Pet('Jane', 'bird')
+p.displayInfo()
+print('------------')
+p.sleep().eat().play().noise()
+p.displayInfo()
+print('---------------------------')
+
+print('---------------------------')
+caleb = Ninja('Caleb', 'Rank', Pet('Misty', "dog"))
+print('------------')
+caleb.feed().walk().bathe()
+caleb.displayInfo()
+print('---------------------------')
+
+print('---------------------------')
+n1 = Ninja('Coding', 'I', Dog('Rover', "Boxer"))
+print('------------')
+n1.feed().walk().bathe()
+n1.displayInfo()
+print('---------------------------')
+
+print('---------------------------')
+n2 = Ninja('Coding', 'II', Cat('Boots', "Calico"))
+print('------------')
+n2.feed().walk().bathe()
+n2.displayInfo()
+print('---------------------------')
+
+print('---------------------------')
+n3 = Ninja('Coding', 'III', Bird('Polly', "Parrot"))
+print('------------')
+n3.feed().walk().bathe()
+n3.displayInfo()
+print('---------------------------')

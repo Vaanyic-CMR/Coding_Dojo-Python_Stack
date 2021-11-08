@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Caleb Rank | Great Number Game</title>
+</head>
+<body>
+
+    <h1>Welcome to the Great Number Game!</h1>
+    <p>I am thinking of a number between 1 and 100</p>
+    <p>Take a guess!</p>
+
+    {% if success == 'yes' %}
+        <div class="container">
+            <form action="/clear_session" class="prompt container" id="win">
+                <h2>{{ num }} was the number!</h2>
+                <button id="reset">Play Again!</button>
+            </form>
+        </div>
+    {% elif success == 'high' %}
+        <div class="container">
+            <h2 class="prompt">Too High!</h2>
+        </div>
+    {% elif success == 'low' %}
+        <div class="container">
+            <h2 class="prompt">Too Low!</h2>
+        </div>
+    {% endif %}
+    
+    {% if success != 'yes' %}
+        <div>
+            <form action="/check_guess" method="post" class="container">
+                <input type="text" name="guess" class="block">
+                <button class="block">Submit</button>
+            </form>
+        </div>
+    {% endif %}
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    padding: 25px 5%;
+}
+label, p {
+    color: whitesmoke;
+
+}
+.box {
+    margin: 0px 10%;
+    padding: 30px;
+    background-color: darkslategrey;
+}

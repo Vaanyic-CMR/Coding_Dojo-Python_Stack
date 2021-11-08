@@ -1,0 +1,23 @@
+INSERT INTO users (first_name, last_name, email, created_at, updated_at)
+VALUES('Caleb', 'Rank', 'calebrank@email.com', '2021-10-22 1:03:00', '2021-10-22 1:03:00');
+
+INSERT INTO users (first_name, last_name, email, created_at, updated_at)
+VALUES('Coding', 'Dojo', 'codingdojo@email.com', '2021-10-22 1:05:00', '2021-10-22 1:05:00');
+
+INSERT INTO users (first_name, last_name, email, created_at, updated_at)
+VALUES('John', 'Doe', 'johndoe@email.com', '2021-10-22 1:07:00', '2021-10-22 1:07:00');
+
+SELECT * FROM users
+
+SELECT * FROM users WHERE EMAIL = 'calebrank@email.com';
+
+SELECT * FROM users WHERE id = 3;
+
+UPDATE users SET last_name = 'Pancakes' WHERE id = 3;
+
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM users WHERE id = 2;
+
+SELECT * FROM users ORDER BY first_name;
+
+SELECT * FROM users ORDER BY first_name DESC;

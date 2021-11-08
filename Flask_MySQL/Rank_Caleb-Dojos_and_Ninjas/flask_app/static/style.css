@@ -1,0 +1,19 @@
+* {
+    margin: 10px 0px;
+}
+li, li > a{
+    margin: 0px;
+    padding: 0px;
+}
+.body-2 {
+    padding: 15px 20%;
+}
+.body-1 {
+    padding: 15px 35%;
+}
+.block {
+    display: block;
+}
+.bordered {
+    border-style: solid;
+}

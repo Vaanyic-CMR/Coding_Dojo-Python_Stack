@@ -1,0 +1,12 @@
+body {
+    padding: 20px 20%;
+}
+
+.bordered {
+    border-style: solid;
+    border-radius: 1px;
+    padding: 5px;
+}
+.btn {
+    margin-top: 20px;
+}
