@@ -1,4 +1,4 @@
-var apiKey = 'c353169fc8fee18ae4101f80eb34d639'
+apiKey = ''
 var cValues = [24, 18, 27, 19, 21, 16, 26, 21]
 var fValues = [75, 65, 80, 66, 69, 61, 78, 70]
 
