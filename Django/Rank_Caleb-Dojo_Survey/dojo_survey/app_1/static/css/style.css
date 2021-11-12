@@ -1,0 +1,40 @@
+body {
+    padding: 20px 30%;
+}
+h1 {
+    color: gold;
+}
+label {
+    color: whitesmoke;
+}
+label, button, select, input{
+    font-size: 13pt;
+}
+textarea {
+    width: 99%;
+    font-size: 13pt;
+}
+button {
+    display: inline-block;
+    background-color: lightblue;
+    border-style: solid;
+    box-shadow: 3px 3px;
+    padding: 5px 15px;
+    margin-top: 5px;
+}
+#form {
+    background-color: #7c7c7c;
+    padding: 25px;
+}
+.row {
+    padding: 10px 0px;
+}
+.block {
+    display: block;
+}
+.flex {
+    display: flex;
+}
+.flex-1 {
+    flex: 1;
+}

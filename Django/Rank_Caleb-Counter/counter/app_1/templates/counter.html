@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/counter.css' %}">
+    <title>Caleb Rank | Counter</title>
+</head>
+<body>
+
+    <h1>Counter</h1>
+    <!-- <p>Visited {{ visiting }} Times</p> -->
+    <p>Counter: {{ request.session.count }}</p>
+    <div>
+        <form action="/add" method="post">
+            {% csrf_token %}
+            <button id="add">Add to Counter by:</button>
+            <input type="text" name="add_by">
+        </form>
+        <form action="/destroy_session">
+            <button id="reset">Reset</button>
+        </form>
+    </div>
+
+</body>
+</html>
