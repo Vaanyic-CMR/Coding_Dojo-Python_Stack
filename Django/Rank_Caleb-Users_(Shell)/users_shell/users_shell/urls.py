@@ -1,4 +1,4 @@
-"""django_practice URL Configuration
+"""users_shell URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path( 'app_1', include('app_1.urls')),
-    path( 'form_app', include('form_app.urls'))
+    path( '', include('app_1.urls') )
     # path('admin/', admin.site.urls),
 ]
